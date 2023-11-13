@@ -12,12 +12,12 @@ export function fetchBreeds() {
   });
 }
 export function createOptionsForIchCat(res) { 
-    const cats = document.querySelector('.breed-select')
+    const selectBreed = document.querySelector('.breed-select')
     res.map(item => { 
-        const elements = document.createElement('option');
-        elements.value = item.id;
-        elements.textContent = item.name; 
+        // const elements = document.createElement('option');
+        // elements.value = item.id;
+        // elements.textContent = item.name; 
               // console.log(elements);
-        cats.insertAdjacentHTML('beforeend', `<option value="${item.id}">${item.name}</option>`)
+        selectBreed.insertAdjacentHTML('beforeend', `<option value="${item.id}">${item.name}</option>`)
     })
  }
