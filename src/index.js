@@ -1,5 +1,5 @@
-import { fetchBreeds, fetchCatByBreed } from "./cat-api.js";
-import { createOptionsForIchCat, createMarkup } from "./template.js";
+import { fetchBreeds, fetchCatByBreed } from "./js/cat-api.js";
+import { createOptionsForIchCat, createMarkup } from "./js/template.js";
 const selectBreed = document.querySelector('.breed-select')
 const catCard = document.querySelector('.cat-info')
 const loader = document.querySelector('.loader')

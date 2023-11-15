@@ -1,7 +1,7 @@
-const BASE_URL = " https://api.thecatapi.com/";
-const ENDPOINT = "v1/breeds";
+const BASE_URL = " https://api.thecatapi.com/v1";
+const ENDPOINT = "/breeds";
 const API_KEY = 'live_KiZjSdHE5Ga57g6XnnxAY4oZLzCTR6HOvCNSkSkvVMc2EtfuM9MhaxsVsm03BGyd';
-const ENDPOINT2 = 'v1/images/search'
+const ENDPOINT2 = '/images/search'
 
 export function fetchBreeds() {
   return fetch(`${BASE_URL}${ENDPOINT}?${API_KEY}`).then((res) => {
