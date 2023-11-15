@@ -10,8 +10,8 @@ export function createOptionsForIchCat(res) {
 
 export function createMarkup(item) {
   return `
-  <div class=""cat-card>
-    <img src="${item.url}" alt="${item.breeds[0].name}" class="cat-img" />
+  <div class="cat-card">
+    <img src="${item.url}" alt="${item.breeds[0].name}" class="cat-img" width="760" hight="660" />
   
   <p class="cat-name">${item.breeds[0].name}</p>
   <p class="cat-description">${item.breeds[0].description}</p>

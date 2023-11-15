@@ -1,3 +1,26 @@
 .is-hidden {
     visibility: hidden;
 }
+
+body {
+    background-color: #f4f4fd;
+    font-size: 36px;
+    font-style: normal;
+
+}
+.breed-select {
+    font-size: 30px;
+        font-style: normal;
+        border: 10px;
+        border-radius: 15px;
+        border-color: blue;
+        background-color: rgb(186, 218, 218);
+}
+.cat-img {
+    
+   border-radius: 20px;
+  
+}
+.cat-name {
+    font-weight: 600;
+}
