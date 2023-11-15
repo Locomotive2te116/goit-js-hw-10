@@ -14,7 +14,7 @@ fetchBreeds()
         createOptionsForIchCat(res)
     }).catch(err => {
         console.log(err);
-        errMes.classList.remove('is-hidden')
+         errMes.classList.remove('is-hidden')
     })
     .finally(() => {
     loader.classList.add('is-hidden')
@@ -28,12 +28,14 @@ selectBreed.addEventListener('click', () => {
     if (!selectBreed.classList.contains('up')) { 
         loader.classList.remove('is-hidden');
         catCard.classList.add('is-hidden');
+        errMes.classList.add('is-hidden');
         const breedId = selectBreed.value;
         fetchCatByBreed(breedId)
             .then(res => { 
                 catCard.classList.remove('is-hidden');
                 const card = createMarkup(res[0]);
                 catCard.innerHTML = card;
+                
 
             })
             .catch(err => { 
