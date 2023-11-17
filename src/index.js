@@ -21,12 +21,9 @@ fetchBreeds()
     });
 
 
-//selectBreed.addEventListener('click', () => {
+
     selectBreed.addEventListener('change', () => {
    
-    //selectBreed.classList.toggle('up');
-
-  //  if (!selectBreed.classList.contains('up')) { 
         loader.classList.remove('is-hidden');
         catCard.classList.add('is-hidden');
         errMes.classList.add('is-hidden');
@@ -49,5 +46,5 @@ fetchBreeds()
 
     }
 
-//})
+
 )
